@@ -1,0 +1,26 @@
+/*
+Skill Rack Average of N Numbers The program must accept an integer N as the input, followed by N integers. The program must print the average of the N integers rounded to two decimal places. Boundary Condition(s): 1 <= N <= 1000 Input Format: The first line contains the integer N. The next N lines contain the N integers. Output Format: The first line contains the average of the N integers rounded to two decimal places. Example Input/Output 1: Input: 5 10 20 30 40 50 Output: 30.00 Explanation: The number of integers is 5. The sum of the integers is 150 (10 + 20 + 30 + 40 + 50). Hence the average is 150 / 5 = 30.00. Example Input/Output 2: Input: 4 12 15 18 21 Output: 16.50 Max Execution Time Limit: 4000 millisecs
+*/
+
+
+
+import java.util.*;
+public class Hello {
+
+    public static void main(String[] args) {
+		//Your Code Here
+      Scanner sc = new Scanner(System.in);
+      int num = sc.nextInt();
+
+      
+      int sum =0;
+      for(int i =0 ; i<num ; i++){
+          sum+= sc.nextInt();
+         
+      }
+      float f = (float) sum/num;
+      
+      System.out.printf("%.2f",f);
+	}
+	
+}
